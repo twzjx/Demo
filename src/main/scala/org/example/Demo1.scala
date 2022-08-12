@@ -12,7 +12,7 @@ import org.apache.spark.sql.functions._
  */
 object Demo1 {
 
-    val FILE_PATH = "movies.csv"
+    val FILE_PATH = "/Users/jiaxing.zhou1/demo/movies.csv"
 
     def main(args: Array[String]): Unit = {
         implicit val spark = createSparkSession()
