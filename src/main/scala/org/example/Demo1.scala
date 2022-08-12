@@ -56,6 +56,5 @@ object Demo1 {
             .orderBy(desc("sum_gross"))
         result = result.withColumn("sum_gross", round(col("sum_gross"), 2))
         result
-
     }
 }
