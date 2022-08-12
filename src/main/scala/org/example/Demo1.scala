@@ -18,7 +18,9 @@ object Demo1 {
         implicit val spark = createSparkSession()
         val df = createDataFrame()
         val rankedDF = rankByYearGross(df)
+        rankedDF.show()
         val rankedDF1 = rankByMovieType(df)
+        rankedDF1.show()
     }
 
     def createDataFrame()(implicit spark: SparkSession) = {
