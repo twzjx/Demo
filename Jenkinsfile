@@ -11,9 +11,9 @@ pipeline {
         stage("Copy the created .jar file to home directory for deployment"){
             steps{
             fileOperations([fileCopyOperation(
-                                flattenFiles: false,
-                                includes: '*.jar',
-                                targetLocation: "home/user"
+                    flattenFiles: false,
+                    includes: '*.jar',
+                    targetLocation: "home/user"
                 )])
             }
         }
