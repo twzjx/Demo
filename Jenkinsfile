@@ -11,7 +11,7 @@ pipeline {
                 sh 'mvn -B -DskipTests clean package'
             }
         }
-        stage("Copy the created .jar file to home directory for docker deployment"){
+        stage("Copy the created .jar file to home directory for deployment"){
             steps{
             fileOperations([fileCopyOperation(
                                 flattenFiles: false,
