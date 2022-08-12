@@ -33,7 +33,6 @@ object Demo1 {
         val sparkConf = new SparkConf().setMaster("local[*]").setAppName("Demo1")
         val spark = SparkSession.builder().config(sparkConf).getOrCreate()
         spark
-
     }
 
     def rankByYearGross(df: DataFrame) = {
