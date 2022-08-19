@@ -55,8 +55,6 @@ object Demo1 {
             .agg(sum("Worldwide_Gross").as("sum_gross"))
             .orderBy(desc("sum_gross"))
         result = result.withColumn("sum_gross", round(col("sum_gross"), 2))
-
         result
-
     }
 }
